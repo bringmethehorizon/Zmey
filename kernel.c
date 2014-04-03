@@ -41,6 +41,16 @@ size_t strlen(const char* str)
 		ret++;
 	return ret;
 }
+char* memcpy(char* dest, const char* src, unsigned int count)
+{
+	for(size_t i=0; i<count; i++) dest[i]=src[i];
+	return dest;
+}
+char* memset(char* dest, char val, unsigned int count)
+{
+	for(size_t i=0; i<count; i++) dest[i]=val;
+	return dest;
+}
  
 static const size_t VGA_WIDTH = 80;
 static const size_t VGA_HEIGHT = 24;
