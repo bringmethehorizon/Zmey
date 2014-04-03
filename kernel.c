@@ -158,7 +158,7 @@ void kernel_main()
 {
 	char fun[]="  ";
 	terminal_initialize();
-	terminal_writestring("Hello, kernel World!\nIt's the best OS ever!\nFun!\n"); 
+	terminal_writestring("Zmey v0.0001+epsilon\n"); 
 	for(size_t i=0; i<30; i++) 
 	{
 		terminal_writestring(itoa(i,fun));
